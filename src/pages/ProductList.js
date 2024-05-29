@@ -87,14 +87,14 @@ function ProductList() {
         <div>
           <Link
             to={"/addproduct"}
-            className="btn btn-primary me-1"
+            className="btn btn-outline-primary me-1"
             role="button"
           >
             Add Product
           </Link>
           <button
             type="button"
-            className="btn btn-outline-primary"
+            className="btn btn-outline-success"
             onClick={getProducts}
           >
             Refresh

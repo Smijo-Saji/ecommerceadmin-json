@@ -45,7 +45,7 @@ function MenuList() {
       case "/filteredproduct/Other":
         return "task-6";
       default:
-        return "dashboard";
+        return "";
     }
   };
 

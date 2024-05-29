@@ -7,7 +7,11 @@ function Logo({ collapsed }) {
       <div className="logo-icon">
         {/* <FireFilled /> */}
         <img src="https://i.postimg.cc/Gmd5NPVB/3135715.png" alt="" />
-        {!collapsed && <b>Admin</b>}
+        {!collapsed && (
+          <>
+            <b>Admin</b>
+          </>
+        )}
       </div>
     </div>
   );
