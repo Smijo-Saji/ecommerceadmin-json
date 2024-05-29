@@ -43,10 +43,6 @@
   padding: 10px;
 }
 
-.table-body tr:hover {
-  background-color: rgba(0, 21, 41, 0.1); /* Lighter hover effect */
-}
-
 .search-icon {
   width: 25px;
   height: 25px;
@@ -92,3 +88,10 @@
     font-size: 15px;
   }
 } */
+.table-body {
+  background-color: aliceblue !important;
+}
+.table-row:hover {
+  background-color: aliceblue !important;
+  cursor: pointer;
+}

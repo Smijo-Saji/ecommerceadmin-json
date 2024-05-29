@@ -110,7 +110,7 @@ function ProductList() {
             type="text"
             className="form-control border-0 search-input"
             style={{ width: "400px" }}
-            placeholder="Search by brand"
+            placeholder="Search for Products,Brands and More "
             onChange={handleSearch}
           />
         </div>
@@ -132,7 +132,7 @@ function ProductList() {
           <tbody className="table-body">
             {records.length > 0 ? (
               records.map((product, index) => (
-                <tr key={index}>
+                <tr key={index} className="table-row">
                   <td>{product.id}</td>
                   <td>{product.name}</td>
                   <td>{product.brand}</td>
