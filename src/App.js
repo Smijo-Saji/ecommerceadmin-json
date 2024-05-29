@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+
+import SideBar from "./components/SideBar";
+import ProductList from "./pages/ProductList";
+import DashBoard from "./pages/DashBoard";
+import Orders from "./pages/Orders";
+import Settings from "./pages/Settings";
+import CreateProduct from "./pages/CreateProduct";
+import EditProduct from "./pages/EditProduct";
+import FilteredProducts from "./pages/FilteredProducts";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar />
+      <Routes>
+        <Route path="/" element={<DashBoard />} />
+        <Route path="/productlist" element={<ProductList />} />
+        <Route path="/addproduct" element={<CreateProduct />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/editproduct/:id" element={<EditProduct />} />
+        <Route path="/filteredproduct/:name" element={<FilteredProducts />} />
+      </Routes>
     </div>
   );
 }

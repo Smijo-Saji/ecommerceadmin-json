@@ -1,0 +1,56 @@
+.admin-pic img {
+  width: 80px;
+  height: 80px;
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+}
+.top-sec {
+  height: 90vh;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-settings {
+  cursor: pointer;
+}
+.site-settings img {
+  width: 50px;
+  height: 40px;
+}
+.edit-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.edit-icon img {
+  width: 50px;
+  height: 50px;
+}
+.edit-icon p {
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0;
+}
+.notification {
+  position: relative;
+  width: 125px;
+}
+.count {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background-color: red;
+  margin: 0;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+  color: white;
+  padding: 1px 5px;
+}

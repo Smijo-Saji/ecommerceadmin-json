@@ -1,0 +1,57 @@
+.dashboard-sec {
+  overflow-x: auto;
+  width: 100%;
+  scrollbar-width: none;
+}
+
+.dashboard-content {
+  flex-wrap: nowrap;
+}
+
+.dashboard-item {
+  margin: 10px;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboard-item p {
+  margin: 0;
+}
+
+.commonstatus {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 5px !important;
+}
+
+.commonstatus.active {
+  background-color: #25d365a8;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: 53px;
+}
+
+.commonstatus.inactive {
+  background-color: #ff000092;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: 63px;
+}
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.dashboard-image {
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .dashboard-image {
+    width: 100%;
+  }
+}

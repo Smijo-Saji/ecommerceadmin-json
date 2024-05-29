@@ -1,0 +1,17 @@
+.img-container {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.img-container img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  object-position: center;
+}
+.prod-img {
+  width: 80px;
+  height: 90px;
+  object-fit: contain;
+  object-position: center;
+}
