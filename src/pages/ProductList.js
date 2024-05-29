@@ -83,14 +83,14 @@ function ProductList() {
   return (
     <div className="container-fluid my-4 product-list">
       <h2 className="text-center mb-4">Products</h2>
-      <div className="d-flex justify-content-between  flex-wrap mb-2">
-        <div className="">
+      <div className="d-flex justify-content-between   flex-wrap mb-3 gap-2">
+        <div>
           <Link
             to={"/addproduct"}
             className="btn btn-primary me-1"
             role="button"
           >
-            Create Product
+            Add Product
           </Link>
           <button
             type="button"
@@ -100,10 +100,16 @@ function ProductList() {
             Refresh
           </button>
         </div>
-        <div className=" ">
+        <div className=" d-flex align-items-center border ps-3 rounded">
+          <img
+            src="https://i.postimg.cc/Dw1PB94X/711319.png"
+            alt=""
+            className="search-icon me-3"
+          />
           <input
             type="text"
-            className="form-control"
+            className="form-control border-0 search-input"
+            style={{ width: "400px" }}
             placeholder="Search by brand"
             onChange={handleSearch}
           />

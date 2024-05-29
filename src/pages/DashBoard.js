@@ -41,7 +41,7 @@ function DashBoard() {
               Phones ({Phones})
             </p>
             <p className={`commonstatus ${Phones > 0 ? "active" : "inactive"}`}>
-              {Phones > 0 ? "Active" : "Inactive"}
+              {Phones > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
           <div className="dashboard-item ">
@@ -55,7 +55,7 @@ function DashBoard() {
                 Computers > 0 ? "active" : "inactive"
               }`}
             >
-              {Computers > 0 ? "Active" : "Inactive"}
+              {Computers > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
           <div className="dashboard-item">
@@ -67,7 +67,7 @@ function DashBoard() {
             <p
               className={`commonstatus ${Cameras > 0 ? "active" : "inactive"}`}
             >
-              {Cameras > 0 ? "Active" : "Inactive"}
+              {Cameras > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
           <div className="dashboard-item">
@@ -81,7 +81,7 @@ function DashBoard() {
                 Accessories > 0 ? "active" : "inactive"
               }`}
             >
-              {Accessories > 0 ? "Active" : "Inactive"}
+              {Accessories > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
           <div className="dashboard-item">
@@ -91,7 +91,7 @@ function DashBoard() {
               In-Ears ({InEars})
             </p>
             <p className={`commonstatus ${InEars > 0 ? "active" : "inactive"}`}>
-              {InEars > 0 ? "Active" : "Inactive"}
+              {InEars > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
           <div className="dashboard-item ">
@@ -101,7 +101,7 @@ function DashBoard() {
               Others ({Others})
             </p>
             <p className={`commonstatus ${Others > 0 ? "active" : "inactive"}`}>
-              {Others > 0 ? "Active" : "Inactive"}
+              {Others > 0 ? "In-Stock" : "Out-Of-Stock"}
             </p>
           </div>
         </div>

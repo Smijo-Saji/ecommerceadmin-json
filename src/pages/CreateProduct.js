@@ -120,7 +120,7 @@ function CreateProduct() {
                   Submit
                 </button>
               </div>
-              <div className="">
+              <div>
                 <Link
                   to={"/productlist"}
                   className="btn btn-secondary"

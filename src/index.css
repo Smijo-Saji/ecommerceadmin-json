@@ -66,6 +66,7 @@
 .form-container {
   max-height: 70vh;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
 }
 
@@ -86,8 +87,11 @@
   padding: 20px;
 }
 
-/* @media (max-width: 600px) {
-  .sidemain {
-    display: none;
+@media (max-width: 575px) {
+  .edit-button-sec {
+    margin-bottom: 50px;
   }
-} */
+  .edit-div .border {
+    border: none !important;
+  }
+}

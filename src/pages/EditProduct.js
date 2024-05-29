@@ -57,8 +57,8 @@ function EditProduct() {
 
   return (
     <div className="container my-4">
-      <div className="row">
-        <div className="col-md-8 mx-auto rounded border p-4">
+      <div className="row edit-div">
+        <div className="col-md-8 mx-auto rounded border p-4 ">
           <h2 className="text-center mb-5">Edit Product</h2>
           <div className="row mb-3">
             <label className="col-sm-4 col-form-label">ID</label>
@@ -178,17 +178,22 @@ function EditProduct() {
                     />
                   </div>
                 </div>
-                <div className="row mb-3">
-                  <div className="offset-sm-4 col-sm-4 d-grid">
-                    <button className="btn btn-primary" type="submit">
+                <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap edit-button-sec">
+                  <div>
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      style={{ width: "200px" }}
+                    >
                       Submit
                     </button>
                   </div>
-                  <div className="col-sm-4 d-grid">
+                  <div>
                     <Link
                       to={"/productlist"}
                       className="btn btn-secondary"
                       role="button"
+                      style={{ width: "200px" }}
                     >
                       Cancel
                     </Link>
